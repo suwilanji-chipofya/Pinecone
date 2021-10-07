@@ -1,9 +1,11 @@
 #!/bin/bash
 echo "" > ./repl/tmp.pn;
 
+echo "Pinecone Programming language"
+echo "Type .exit or Ctrl+C to Exit"
 while [ true ]
 do
-  read -p "> " cmd;
+  read -p ">> " cmd;
   if [ "$cmd" == ".clear" ]; then
     echo "" > ./repl/tmp.pn;
     clear;
